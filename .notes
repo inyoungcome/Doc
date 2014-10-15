@@ -1,0 +1,138 @@
+
+** Tue Sep 23 16:26:08 2014 ()
+
+
+** Tue Sep 23 16:29:26 2014 ()
+
+
+/Users/ycq/Documents/org/appscript.org
+
+** Tue Sep 23 16:54:44 2014 (asdfw)
+
+asdfw
+
+/Users/ycq/Documents/org/appscript.org
+
+** Tue Sep 23 16:55:00 2014 (你是在做什么)
+
+你是在做什么
+
+/Users/ycq/Documents/org/appscript.org
+
+** Wed Sep 24 11:33:24 2014 (代码管控，不是去看代码)
+
+代码管控，不是去看代码
+类图的使用。
+
+** Wed Sep 24 14:45:34 2014 (数据库中索引、主键的区别？)
+
+数据库中索引、主键的区别？
+
+/Users/ycq/Documents/org/appscript.org
+
+** Wed Sep 24 15:43:03 2014 (飞信：应该增加滑动切换菜单的功能。主要在于现在手机屏幕越做越大，如果纯粹)
+
+飞信：应该增加滑动切换菜单的功能。主要在于现在手机屏幕越做越大，如果纯粹
+
+/Users/ycq/Documents/org/appscript.org
+
+** Wed Sep 24 16:27:14 2014 ( 一、emacs中的C开发模式)
+
+ 一、emacs中的C开发模式
+ 1、M-x c-mode进入C开发模式
+ 2、M-x complier 进入编译命令，不过需要有makefile文档，它执行的命令是make -k
+ 3、M-x gdb 进入调试模式
+
+/Users/ycq/code/c/test.c
+
+** Thu Sep 25 09:57:09 2014 (工作注意事项：)
+
+工作注意事项：
+1、会议结束后，一定要发反馈邮件，确定会议内容要点。
+2、站立会议结束后，要有总结。否则都不清楚会议内容。
+
+/Users/ycq/Documents/org/appscript.org
+
+** Thu Sep 25 14:03:16 2014 (工作职责：)
+
+工作职责：
+1、质量管理员的工作，主要负责开发环境的管理，代码管控。
+2、统一认证平台项目的管理
+
+/Users/ycq/Documents/org/appscript.org
+
+** Mon Sep 29 11:43:19 2014 (吾生也有涯。)
+
+吾生也有涯。
+
+NAS文件服务器，HP N54L，当前问题在于怎么管理。
+1、文件服务器也能做代码服务器
+2、文件服务器服务整个部门文档共享。
+
+/Users/ycq/Documents/org/appscript.org
+
+** Mon Oct  6 17:56:29 2014 (1、Erlang语言的特点：)
+
+1、Erlang语言的特点：
+单个进程进行同步处理，多个进程进行IO的并行。
+
+/Users/ycq/Documents/org/appscript.org
+
+** Wed Oct  8 10:37:44 2014 (go语言的特性如何，能有效的使用吗？许式伟的观点是否可行？)
+
+go语言的特性如何，能有效的使用吗？许式伟的观点是否可行？
+
+/Users/ycq/Documents/org/appscript.org
+
+** Thu Oct  9 10:40:15 2014 (1、查看系统IO中磁盘信息可以使用iotop命令。)
+
+1、查看系统IO中磁盘信息可以使用iotop命令。
+
+/Users/ycq/Documents/org/appscript.org
+
+** Thu Oct  9 10:53:15 2014 (2、对于CPU和IO操作。当进行密集型IO时，CPU的处理状况是怎样的？)
+
+2、对于CPU和IO操作。当进行密集型IO时，CPU的处理状况是怎样的？
+文件内容的复制操作，是如何实现的？
+CPU是什么概念？
+密集型CPU操作是怎么出现的？
+
+
+/Users/ycq/Documents/org/appscript.org
+
+** Thu Oct  9 11:21:00 2014 ()
+
+
+CPU和外设之间的交互，是通过控制器进行搭桥。
+例如，Disk dirves 搭配有 Disk controller，Printer配有Printer controller等等。
+控制器和设备之间的接口是一种很低层次的接口，
+CPU通过控制器的寄存器中写入命令和参数后，CPU返回处理其他内容，具体执行命令的由控制器去操作外设完成，随后发起中断通知CPU控制器命令执行结果。
+
+/Users/ycq/Documents/org/appscript.org
+
+** Thu Oct  9 13:48:53 2014 (设备数据总线的概念，通过数据总线的传递，实现数据的传输。)
+
+设备数据总线的概念，通过数据总线的传递，实现数据的传输。
+
+/Users/ycq/Documents/org/appscript.org
+
+** Fri Oct 10 16:58:38 2014 (会议：研究院交流会议)
+
+会议：研究院交流会议
+时间：2014-10-10
+
+
+讨论：积分系统性能问题
+1、积分系统为什么要采用F5和nginx两种软、硬件的负载均衡
+2、积分系统使用的消息队列是apache MQ消息队列。
+
+
+/Users/ycq/Documents/org/appscript.org
+
+** Tue Oct 14 16:59:29 2014 (一、web相关知识。)
+
+一、web相关知识。
+1、必备基础知识点
+1.1、带宽的理解。数据的网络传输原理。
+
+/Users/ycq/Documents/org/appscript.org
