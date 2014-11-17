@@ -1,0 +1,7 @@
+#+BEGIN_SRC c -n -t
+#include<stdio.h>
+int main()
+{
+}
+
+#+END_SRC

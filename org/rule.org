@@ -1,0 +1,12 @@
+* 时间规划
+** 使用org做时间规划工具
+* 设计规划
+** 使用org工具作为设计规划工具
+** UML使用
+*** UML 14图
+*** 进阶参考文档
+Martin Fowler 《UML Distilled》
+*** 《UML团队开发流出管理》中的设计方法、步骤、流程
+1、Activity diagrams emphasize the flow of control from activity to activity。
+2、A use case is a sequence of transactions in a system whose task is to yield
+a result of measurable value to an individual actor of the system.

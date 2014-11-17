@@ -1,0 +1,13 @@
+#对于.tar,.zip.gzip等格式文件alias一个统一的命令，减少重复工作量
+
+#对于新创建的Linux系统，需要进行相关配置。收集统一的配置信息执行脚本
+#yum源设置CentOS系统
+1、备份操作
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.$(date +%F)_backup
+
+2、下载对应版本的repo
+cd /etc/yum.repos.d
+wget http://mirrors.163.com/.help/CentOS5-Base-163.repo
+
+3、生成缓存
+yum makecache
