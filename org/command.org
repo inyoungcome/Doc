@@ -1,0 +1,52 @@
+* #TITLE: 常用命令
+** 查看系统信息
+   [[http://os.51cto.com/art/200912/169233.htm][常见查看命令]]
+** SSH 登陆
+   + ssh -p PORT USER@SERVICE_IP
+** 账户管理
+   + [[http://cnzhx.net/blog/linux-add-user-to-group/][用户管理命令]]
+
+** linux目录结构
+   + [[http://linux.vbird.org/linux_basic/0210filepermission.php#dir][FHS目录规划]]
+
+* #主机guide
+
+
+* 笔记
+** sudo配置内容：
+# User alias specification
+User_Alias      OPER_SUPER=superuser01,superuser02,superuser03,user01,user02,user03
+User_Alias      OPER_APP=user01,user02,user03
+
+
+# Cmnd alias specification
+Cmnd_Alias      KILL=/bin/kill
+Cmnd_Alias      SU=/bin/su
+Cmnd_Alias      ROOT=/bin/su -
+Cmnd_Alias      APP=/bin/su - app
+
+
+# User privilege specification
+#ALL            ALL=(ALL) ALL
+OPER_APP     ALL = NOPASSWD:KILL,APP (该配置指定OPER_APP有权执行kill命令和切换到app账户执行命令)
+OPER_SUPER      ALL = NOPASSWD:KILL,ROOT (该配置指定OPER_APP有权执行kill和切换到任何用户下执行命令)
+
+
+* 服务器安装进度
+** yum源安装完成
+** git安装完成
+** git服务段、客户端设置
+   1. 服务端
+      + 创建git用户，其他需要使用git仓库的人员使用git用户登陆。
+      + ssh public key值存储在git用户下，/home/git/.ssh/authorized.keys
+      + git 仓库创建时需创建裸仓库，使用git参数--bare（只要在该服务器中的用户有SSH权限，以及对git仓库有读写权限都能浏览git仓库）
+   2. 客户端
+      + 在本地生成SSH Key（ssh-genkey -t rsa -C "email address" -f path-to-keys）
+      + 服务器外网IP端口和服务器ssh服务的端口不一致，需要在客户端的.ssh/config文件中配置相应的host和端口。
+      + 测试SSH链接使用(ssh -vvv user@host)
+
+*
+** vim安装完成
+
+* 测试远程端口服务命令
+ nmap -p 80 host [[http://nmap.org/][man文档]]

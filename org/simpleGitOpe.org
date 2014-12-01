@@ -1,0 +1,27 @@
+* DATE:[2014-11-19 Wed]
+** git使用准备
+   1. 提供机器生成的key，在服务器存档
+   2. 安装客户端
+** git 基本操作
+   1. git init
+      + git 接管当前目录的版本管理
+   2. git add
+      + 添加文档到stage状态`
+   3. git commit:
+      + 将stage中的变更存档
+   4. git push origin git@server
+
+** git 环境支持方案
+   1. [[https://gist.github.com/vkyii/1079783][中文乱码解决方案]]
+   2. [[http://git-scm.com/book/zh/v1/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-%E9%85%8D%E7%BD%AE-Git][git配置文件概念]]
+   3. git Window平台使用
+      + git Windows 客户端msysgit
+      + [[http://msysgit.github.io/][msysgit下载地址]]
+
+** git使用简易指南
+   1. git分布式概念：
+      + 分布式版本对于每个人电脑里都是完整的版本库，每个人的电脑都能完成版本库的推送修改。但是版本库通常会有一台“中央服务器”，其作用也仅仅是用来方便“交换”大家的变更。
+
+   2. git中SSH KEY的生成：
+      + linux平台SSH KEY生成方式。
+      + windows平台使用msysgit->帮助->show SSH Key 能帮助生成KEY，需要键入密码。
